@@ -104,7 +104,7 @@ public class TeleportsManager {
     public static void finishTPA( final Player player, final String target ) {
         if (!player.hasPermission("gesuit.teleports.bypass.delay")) {
             lastLocation.put(player, player.getLocation());
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Teleportation will commence in &c3 seconds&6. Don't move."));
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Teleportation will commence in &c1 second&6. Don't move."));
 
             geSuitTeleports.getInstance().getServer().getScheduler().runTaskLater(geSuitTeleports.getInstance(), new Runnable() {
                 @Override
@@ -133,7 +133,7 @@ public class TeleportsManager {
 	                    }
                 	}
                 }
-            }, 60L);
+            }, 20L);
         } else {
             player.saveData();
             ByteArrayOutputStream b = new ByteArrayOutputStream();
@@ -203,7 +203,7 @@ public class TeleportsManager {
 
         if (!player.hasPermission("gesuit.teleports.bypass.delay")) {
             lastLocation.put(player, player.getLocation());
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Teleportation will commence in &c3 seconds&6. Don't move."));
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Teleportation will commence in &c1 second&6. Don't move."));
 
             geSuitTeleports.getInstance().getServer().getScheduler().runTaskLater(geSuitTeleports.getInstance(), new Runnable() {
                 @Override
@@ -230,7 +230,7 @@ public class TeleportsManager {
 	                    }
                 	}
                 }
-            }, 60L);
+            }, 20L);
         } else {
             player.saveData();
             ByteArrayOutputStream b = new ByteArrayOutputStream();
@@ -325,7 +325,7 @@ public class TeleportsManager {
 
         if (!player.hasPermission("gesuit.teleports.bypass.delay")) {
             lastLocation.put(player, player.getLocation());
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Teleportation will commence in &c3 seconds&6. Don't move."));
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Teleportation will commence in &c1 second&6. Don't move."));
 
             geSuitTeleports.getInstance().getServer().getScheduler().runTaskLater(geSuitTeleports.getInstance(), new Runnable() {
                 @Override
@@ -354,7 +354,7 @@ public class TeleportsManager {
 		                }
                 	}
                 }
-            }, 60L);
+            }, 20L);
         } else {
             player.saveData();
             ByteArrayOutputStream b = new ByteArrayOutputStream();
